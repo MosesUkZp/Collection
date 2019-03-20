@@ -7,10 +7,14 @@ public class TestAssert {
 //        assert  b == a;
 //        System.out.println("Program exit");
 //
-        System.out.println(MyDirectin.NORTH);
-        System.out.println(MyDirectin.NORTH.name());
-        System.out.println(MyDirectin.EAST.ordinal());
-        System.out.println(Arrays.toString(MyDirectin.values()));
-        System.out.println(MyDirectin.valueOf("EAST"));
+//        System.out.println(MyDirectin.NORTH);
+//        System.out.println(MyDirectin.NORTH.name());
+//        System.out.println(MyDirectin.EAST.ordinal());
+        System.out.println(Arrays.toString(MyDayOfWeek.values()));
+
+        System.out.println(MyDayOfWeek.MONDAY.nextDayOfWeek());
+
+
+//        System.out.println(MyDirectin.valueOf("EAST"));
     }
 }
