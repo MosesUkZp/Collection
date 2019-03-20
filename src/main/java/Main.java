@@ -28,16 +28,16 @@ public class Main {
 //        return unique.toCharArray();
 //    }
 
-    public static void main(String[] args) {
-
-        String email = "email@gmail.com";
-        final Pattern pattern = Pattern.compile("^\\w*@\\w*\\.\\w{2,3}$");
-        final Matcher matcher = pattern.matcher(email);
-        if (matcher.matches()){
-            System.out.println("This is email");
-        }else {
-            System.out.println("No email");
-        }
+    public static void main(String[] args) throws InvalidAgeException {
+//
+//        String email = "email@gmail.com";
+//        final Pattern pattern = Pattern.compile("^\\w*@\\w*\\.\\w{2,3}$");
+//        final Matcher matcher = pattern.matcher(email);
+//        if (matcher.matches()){
+//            System.out.println("This is email");
+//        }else {
+//            System.out.println("No email");
+//        }
 
 //        System.out.println(chars("Hallo world"));
 
@@ -58,6 +58,9 @@ public class Main {
 //        System.out.println(str1);
 
 
+        Person person = new Person("fdfdf","erere",10);
+        System.out.println(person.toString());
+        System.out.println("Program exit");
 
 
     }
