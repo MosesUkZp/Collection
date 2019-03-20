@@ -12,7 +12,11 @@ public class TestAssert {
 //        System.out.println(MyDirectin.EAST.ordinal());
         System.out.println(Arrays.toString(MyDayOfWeek.values()));
 
-        System.out.println(MyDayOfWeek.MONDAY.nextDayOfWeek());
+        System.out.println(MyDayOfWeek.MONDAY
+                .nextDayOfWeek()
+                .nextDayOfWeek()
+                .nextDayOfWeek()
+                .nextDayOfWeek());
 
 
 //        System.out.println(MyDirectin.valueOf("EAST"));
