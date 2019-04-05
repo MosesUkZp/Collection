@@ -16,8 +16,14 @@ public class MultiList<K,V> {
             list.add(value);
         }
 
-    public List<V> get (K key){
+    public List get (K key){
         List<V> list = map.get(key);
-       return Collections.unmodifiableList(list);
+        if(list!= null){
+            return Collections.unmodifiableList(list);
+        }
+       return Collections.EMPTY_LIST;
+
+
+
     }
 }
